@@ -1,4 +1,22 @@
-body{
-	background: rosybrown; 
+body{ padding: 0;
+	margin: 0;
+	background: salmon; 
 	border: 20;
+}
+.wrapper{
+	display: grid;
+	grid-template-columns:repeat(3,2fr ) 1fr;
+	grid-gap: 0.5em;
+/*	grid-auto-rows:133px ;*/
+	grid-auto-rows: minmax(100px, auto);
+}
+.wrapper > div{
+	padding: 1em; 
+	background-color:grey ;
+	color: gainsboro;
+}	
+.wrapper > div.light{
+		padding: 1em; 
+		background-color:dimgray ;
+
 }
